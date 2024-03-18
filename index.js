@@ -102,3 +102,9 @@ const engineerQuestions = [
     },
   ];
   
+// write HTML with file name and data
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+      err ? console.error(err) : console.log("Success!")
+    );
+  }
