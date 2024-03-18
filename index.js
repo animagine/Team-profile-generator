@@ -125,3 +125,55 @@ function generateTeam() {
       displayMenu();
     });
 }
+
+// function to display menu
+
+function displayMenu() {
+    // Another inquirer. prompt to display the menu options after the user has answered the engineer questions
+    inquirer.prompt(menuQuestions).then((menuAnswers) => {
+      console.log(menuAnswers.menu);
+  
+      if (menuAnswers.menu === "Engineer") {
+        displayEngineer();
+      } else if (menuAnswers.menu === "Intern") {
+        displayIntern();
+      } else {
+        writeToFile("team.html", render(wholeTeam));
+      }
+    });
+  }
+
+  // function to display engineer's details
+  function displayEngineer() {
+      inquirer.prompt(engineerQuestions).then((engineerAnswers) => {
+      console.log(engineerAnswers);
+      const engineer = new Engineer(
+        engineerAnswers.Name,
+        engineerAnswers.EngineerID,
+        engineerAnswers.Email,
+        engineerAnswers.Github,
+      );
+      wholeTeam.push(engineer);
+  
+      displayMenu();
+    });
+  }  
+
+  // function to display intern's details
+  function displayIntern() {
+    //Inquirer.prompt to ask the Intern Questions after user has selected Intern from the menu options
+    inquirer.prompt(internQuestions).then((internAnswers) => {
+      console.log(internAnswers);
+      const intern = new Intern(
+        internAnswers.Name,
+        internAnswers.InternID,
+        internAnswers.Email,
+        internAnswers.School,
+      );
+      wholeTeam.push(intern);
+  
+      displayMenu();
+    });
+  }
+  
+  generateTeam();  
