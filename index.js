@@ -65,3 +65,31 @@ const engineerQuestions = [
       name: "Github",
     },
   ];
+
+  //Prompt for Intern's questions
+  const internQuestions = [
+    {
+      type: "input",
+      message: "Enter intern name:",
+      name: "Name",
+    },
+  
+    {
+      type: "input",
+      message: "Enter intern ID:",
+      name: "InternID",
+    },
+  
+    {
+      type: "input",
+      message: "Enter intern email:",
+      name: "Email",
+    },
+  
+    {
+      type: "input",
+      message: "Enter name of school intern attended:",
+      name: "School",
+    },
+  ];
+  
