@@ -37,6 +37,15 @@ const managerQuestions =[
         name: "OfficeNumber",
       },
 ]
+// Menu to display after manager's details have been entered,
+const menuQuestions = [
+    {
+      type: "list",
+      name: "menu",
+      message: "Do you want to add an engineer, intern or finish?",
+      choices: ["Engineer", "Intern", "Finish"],
+    },
+  ];
 
 // Prompts for Engineer's questions
 
