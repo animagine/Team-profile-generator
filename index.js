@@ -108,3 +108,20 @@ function writeToFile(fileName, data) {
       err ? console.error(err) : console.log("Success!")
     );
   }
+
+// initialise program
+function generateTeam() {
+    // Inquirer.prompt to ask the Manager Questions when the application starts
+    inquirer.prompt(managerQuestions).then((managerAnswers) => {
+      console.log(managerAnswers);
+  
+      const manager = new Manager(
+        managerAnswers.Name,
+        managerAnswers.ManagerID,
+        managerAnswers.Email,
+        managerAnswers.OfficeNumber,
+      );
+      wholeTeam.push(manager);
+      displayMenu();
+    });
+}
