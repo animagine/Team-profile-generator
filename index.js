@@ -37,3 +37,31 @@ const managerQuestions =[
         name: "OfficeNumber",
       },
 ]
+
+// Prompts for Engineer's questions
+
+const engineerQuestions = [
+    {
+      type: "input",
+      message: "Enter engineer name:",
+      name: "Name",
+    },
+  
+    {
+      type: "input",
+      message: "Enter engineer ID:",
+      name: "EngineerID",
+    },
+  
+    {
+      type: "input",
+      message: "Enter engineer email:",
+      name: "Email",
+    },
+  
+    {
+      type: "input",
+      message: "Enter Github username:",
+      name: "Github",
+    },
+  ];
