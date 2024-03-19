@@ -11,36 +11,56 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .card.employee-card {
+    margin: 10px;
+}
+
+.display-1{
+    color: aliceblue;
+}
+
+.ojuju-bold {
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: ExtraBold 800;
+}
+    </style>
+
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+            <div class="col-12 jumbotron mb-3 team-heading bg-primary">
+                <h1 class="text-center display-1 ojuju-bold">My Team</h1>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+        <div class="row p-4 gap-3">
+            <div class="team-area col-12 d-flex justify-content-center m-4">
                 
         <div class="card employee-card">
-        <div class="card-header">
-            <h2 class="card-title">Martin Avwenagha</h2>
+        <div class="card-header bg-info">
+            <h2 class="card-title ">Martin Avwenagha</h2>
             <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
         </div>
         <div class="card-body">
             <ul class="list-group">
-                <li class="list-group-item">ID: undefined</li>
+                <li class="list-group-item">ID: Masterchief117</li>
                 <li class="list-group-item">Email: <a href="mailto:animagine@live.com">animagine@live.com</a></li>
-                <li class="list-group-item">Office number: undefined</li>
+                <li class="list-group-item">Office number: +1234 5678 90</li>
             </ul>
         </div>
     </div>
-        
+        <!-- employee section -->
         <div class="card employee-card">
-    <div class="card-header">
+    <div class="card-header bg-warning">
         <h2 class="card-title">Bruce Wayne</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
     </div>
@@ -51,38 +71,10 @@
             <li class="list-group-item">GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer"></a></li>
         </ul>
     </div>
-</div>
-        
+</div>        
+           <!--Intern section-->
         <div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">Clark Kent</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: Sups24</li>
-            <li class="list-group-item">Email: <a href="mailto:clark@superman.com">clark@superman.com</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer"></a></li>
-        </ul>
-    </div>
-</div>
-        
-        <div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">Diana Prince</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: Amazon1</li>
-            <li class="list-group-item">Email: <a href="mailto:wonder@amazonia.co.uk">wonder@amazonia.co.uk</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer"></a></li>
-        </ul>
-    </div>
-</div>
-        
-        <div class="card employee-card">
-    <div class="card-header">
+    <div class="card-header bg-warning">
         <h2 class="card-title">Luke Skywalker</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
     </div>
